@@ -3,14 +3,54 @@ body {
   color: #434455;
   background-color: #fff;
 }
+
+/* reset */
+
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* common */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -20,10 +60,21 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .header-logo .logo-dark {
   color: #2e2f42;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -34,10 +85,17 @@ a {
 .nav-link:focus {
   color: #404bbf;
 }
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts-link {
+  padding: 24px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -48,6 +106,9 @@ a {
 .contacts-link:focus {
   color: #404bbf;
 }
+
+/* hero */
+
 .hero {
   background-color: #2e2f42;
 }
@@ -58,6 +119,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-top: 188px;
+  margin-bottom: 0 auto 48px;
 }
 .hero-button {
   font-family: 'Roboto', sans-serif;
@@ -68,6 +131,8 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  padding: 16px 32px;
+  margin: 0 auto 188px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -79,6 +144,8 @@ a {
   color: #fff;
   background-color: #404bbf;
 }
+
+/* main */
 
 .subtitle-section {
   font-weight: 500;
@@ -129,6 +196,8 @@ a {
 .team-item {
   background-color: #fff;
 }
+
+/* footer */
 
 .footer {
   background-color: #2e2f42;
