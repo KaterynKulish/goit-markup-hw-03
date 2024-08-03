@@ -227,8 +227,8 @@ section {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 24px;
-  column-gap: 48px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .item-portfolio {
   width: calc((100% - 48px) / 3);
@@ -246,6 +246,9 @@ section {
 .footer {
   background-color: #2e2f42;
 }
+.footer-container {
+  padding: 100px 0;
+}
 .logo .logo-light {
   color: #f4f4fd;
 }
@@ -255,4 +258,6 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
 }
