@@ -122,7 +122,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 498px;
+  max-width: 496px;
   margin: 0 auto 48px;
 }
 .hero-button {
@@ -137,6 +137,10 @@ img {
   padding: 16px 32px;
   margin: 0 auto;
   display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -160,11 +164,21 @@ section {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: left;
-
+  margin-bottom: 8px;
   background-color: #fff;
 }
-.feature-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 .list-feature {
   display: flex;
@@ -213,9 +227,10 @@ section {
 .team-item {
   background-color: #fff;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 .name-team {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .name-team .subtitle-section {
   text-align: center;
@@ -246,10 +261,13 @@ section {
 
 .footer {
   background-color: #2e2f42;
-}
-.footer-container {
   padding: 100px 0;
 }
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo .logo-light {
   color: #f4f4fd;
 }
@@ -260,5 +278,4 @@ section {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  margin-top: 16px;
 }
